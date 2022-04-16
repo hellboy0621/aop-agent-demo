@@ -1,0 +1,9 @@
+<aspectj>
+  <aspects>
+    <aspect name="com.xtransformers.aop.MyAspect"/>
+    <weaver options="-verbose -showWeaveInfo">
+      <include within="com.xtransformers.service.MyService"/>
+      <include within="com.xtransformers.aop.MyAspect"/>
+    </weaver>
+  </aspects>
+</aspectj>
